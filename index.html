@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>আচার ঘর | খাঁটি দেশি আচার</title>
+<meta name="description" content="আচার ঘর — ঘরের স্বাদে খাঁটি দেশি আচার। সারা বাংলাদেশে ডেলিভারি।">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="container">🚚 সারা বাংলাদেশে ক্যাশ অন ডেলিভারি &nbsp; • &nbsp; ☎ <span data-phone>+880 1234-567890</span></div></div>
+<header>
+ <div class="container nav">
+  <a class="logo" href="#home"><span class="logo-mark"><img id="img" src="./img/images (1).jpg"></span><span><b>আচার ঘর</b><small>খাঁটি দেশি স্বাদ</small></span></a>
+  <button class="hamb" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+  <nav><a href="#home">হোম</a><a href="#products">আচার</a><a href="#about">আমাদের কথা</a><a href="#why">কেন আমরা</a><a href="#reviews">রিভিউ</a><a href="#contact">যোগাযোগ</a></nav>
+  <button class="cart" onclick="openCart()">🛒 <i id="count">0</i></button>
+ </div>
+</header>
+
+<section id="home" class="hero">
+ <div class="container hero-inner">
+  <div class="hero-copy"><span class="pill">🌿 ১০০% দেশি উপকরণ</span><h1>প্রতিটি বয়ামে<br><em>ঘরের স্বাদ</em></h1><p>আম, লেবু, জলপাই, কাঁচামরিচ—পরিবারের পছন্দের খাঁটি আচার, যত্নে তৈরি।</p>
+  <div class="actions"><a class="btn primary" href="#products">আচার দেখুন →</a><a class="btn ghost" href="#about">আমাদের গল্প</a></div>
+  <div class="mini-trust"><span>✓ নিরাপদ</span><span>✓ পরিচ্ছন্ন</span><span>✓ সারা দেশে ডেলিভারি</span></div></div>
+  <div class="hero-product"><div class="jar"><img id="img" src="./img/images (1).jpg"><strong>আচার<br>ঘর</strong><small>দেশি আচার</small></div><div class="floating">⭐ ৪.৯/৫<br><small>গ্রাহক রেটিং</small></div></div>
+ </div>
+</section>
+
+<section class="benefits"><div class="container benefits-grid">
+ <div><b>🌿</b><span><strong>খাঁটি উপকরণ</strong><small>বাছাই করা দেশি ফল</small></span></div>
+ <div><b>🛡️</b><span><strong>হাইজিন মেইনটেইন</strong><small>নিরাপদ প্রস্তুত প্রক্রিয়া</small></span></div>
+ <div><b>🚚</b><span><strong>দ্রুত ডেলিভারি</strong><small>সারা বাংলাদেশে</small></span></div>
+ <div><b>💚</b><span><strong>সন্তুষ্টি নিশ্চয়তা</strong><small>আপনার সন্তুষ্টিই আগে</small></span></div>
+</div></section>
+
+<section id="products" class="section">
+<div class="container"><div class="heading"><span>আমাদের সংগ্রহ</span><h2>জনপ্রিয় আচার</h2><p>আপনার খাবারের টেবিলে যোগ হোক টক-ঝাল-মিষ্টি আনন্দ।</p></div>
+<div class="filters"><button class="active" data-cat="all">সব</button><button data-cat="mango">আম</button><button data-cat="lemon">লেবু</button><button data-cat="spicy">ঝাল</button><button data-cat="special">স্পেশাল</button></div>
+<div id="productsGrid" class="grid"></div></div>
+</section>
+
+<section id="about" class="section about"><div class="container about-grid">
+<div class="about-art"><div class="bowl">🥭</div><span>ঘরের স্বাদ • ভালোবাসার যত্ন</span></div>
+<div><div class="eyebrow">আমাদের কথা</div><h2>আচার ঘর কেন?</h2><p>আচার ঘরের শুরু একটি সহজ স্বপ্ন থেকে—দাদী-নানীর হাতে তৈরি আচারের সেই পরিচিত স্বাদকে সুন্দর ও নিরাপদভাবে সবার ঘরে পৌঁছে দেওয়া।</p><p>আমরা বাছাই করা উপকরণ, পরিচ্ছন্ন প্রস্তুতি এবং স্বাদের ধারাবাহিকতাকে সবচেয়ে বেশি গুরুত্ব দিই।</p><div class="stats"><div><b>100%</b><small>দেশি স্বাদ</small></div><div><b>8+</b><small>আচার ভ্যারাইটি</small></div><div><b>64</b><small>জেলায় ডেলিভারি</small></div></div></div>
+</div></section>
+
+<section id="why" class="section why"><div class="container"><div class="heading"><span>আমাদের প্রতিশ্রুতি</span><h2>স্বাদে, মানে ও সেবায়</h2></div><div class="why-grid">
+<div><div class="icon">🌱</div><h3>প্রাকৃতিক স্বাদ</h3><p>প্রয়োজনীয় উপকরণ ও মশলার সঠিক ভারসাম্যে তৈরি।</p></div>
+<div><div class="icon">🧼</div><h3>পরিচ্ছন্নতা</h3><p>প্রস্তুতি ও প্যাকেজিংয়ে পরিচ্ছন্নতার প্রতি বিশেষ নজর।</p></div>
+<div><div class="icon">📦</div><h3>নিরাপদ প্যাকেজিং</h3><p>ডেলিভারির জন্য যত্নসহকারে প্যাক করা হয়।</p></div>
+<div><div class="icon">☎</div><h3>সহজ অর্ডার</h3><p>ফোন বা ওয়েবসাইট—দুইভাবেই অর্ডার করা সহজ।</p></div>
+</div></div></section>
+
+<section id="reviews" class="section reviews"><div class="container"><div class="heading"><span>গ্রাহকদের ভালোবাসা</span><h2>তারা যা বলছেন</h2></div><div class="review-grid">
+<article><div>★★★★★</div><p>“আমের আচারটা অসাধারণ! একদম ঘরোয়া স্বাদ। আবার অর্ডার করব।”</p><b>সামিয়া রহমান</b><small>ঢাকা</small></article>
+<article><div>★★★★★</div><p>“প্যাকেজিং সুন্দর, ডেলিভারিও সময়মতো পেয়েছি। লেবুর আচার খুব ভালো লেগেছে।”</p><b>তানভীর হাসান</b><small>চট্টগ্রাম</small></article>
+<article><div>★★★★★</div><p>“ঝাল আচার যারা পছন্দ করেন তাদের জন্য দারুণ। পরিবারের সবাই পছন্দ করেছে।”</p><b>মাহমুদা আক্তার</b><small>রাজশাহী</small></article>
+</div></div></section>
+
+<section class="offer"><div class="container"><div><span>🎁 নতুন গ্রাহকদের জন্য</span><h2>প্রথম অর্ডারে বিশেষ অফার</h2><p>আজই অর্ডার করুন এবং ঘরে আনুন খাঁটি দেশি স্বাদ।</p></div><a class="btn primary" href="#products">এখনই অর্ডার করুন</a></div></section>
+
+<section id="contact" class="section contact"><div class="container contact-grid"><div><div class="eyebrow">যোগাযোগ</div><h2>আমাদের সাথে কথা বলুন</h2><p>অর্ডার, পণ্য বা ডেলিভারি সম্পর্কে জানতে যোগাযোগ করুন।</p><div class="contact-list"><p>📍 বাড়ি ৫, রোড ১২, ধানমন্ডি, ঢাকা</p><p>☎ <span data-phone>+880 1234-567890</span></p><p>✉ info@acharghor.com</p><p>🕘 প্রতিদিন সকাল ৯টা — রাত ৯টা</p></div></div>
+<form onsubmit="sendMessage(event)"><input required placeholder="আপনার নাম *"><input required type="tel" placeholder="মোবাইল নম্বর *"><input type="email" placeholder="ইমেইল"><textarea required placeholder="আপনার বার্তা *"></textarea><button class="btn primary">বার্তা পাঠান</button></form></div></section>
+
+<div class="order-strip"><div class="container"><b>আজই ঘরে আনুন আচার ঘর</b><span>☎ <span data-phone>+880 1234-567890</span></span><a href="#products">অর্ডার করুন →</a></div></div>
+<footer><div class="container footer"><div class="logo"><span class="logo-mark">🥭</span><span><b>আচার ঘর</b><small>খাঁটি দেশি স্বাদ</small></span></div><div><b>দ্রুত লিংক</b><p><a href="#products">আচার</a> · <a href="#about">আমাদের কথা</a> · <a href="#contact">যোগাযোগ</a></p></div><div><b>আমাদের সাথে থাকুন</b><p>Facebook · Instagram · WhatsApp</p></div></div><div class="copy">© 2026 আচার ঘর — সর্বস্বত্ব সংরক্ষিত</div></footer>
+
+<div id="cartModal" class="modal" onclick="if(event.target===this)closeCart()"><div class="cart-panel"><button class="x" onclick="closeCart()">×</button><h2>আপনার কার্ট</h2><div id="cartItems"></div><div class="total">মোট <b id="total">৳0</b></div><button class="btn primary full" onclick="goCheckout()">চেকআউট / অর্ডার</button></div></div>
+<script src="script.js"></script>
+</body></html>
